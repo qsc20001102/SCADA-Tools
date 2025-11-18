@@ -14,7 +14,7 @@ class MainUI(BasicUI):
         #窗口标题
         self.root.title("SCADA Tools")
         #窗口大小
-        self.root.geometry("1000x500")
+        self.root.geometry("1000x400")
         #窗口缩放禁用
         root.resizable(False, False)
         # 图标路径

@@ -12,26 +12,26 @@ class TemplateManager:
         self.base_dir = base_dir
         self.template_data = []
 
-    def get_device_types(self):
+    def get_device_types(self, config = "config_kingscada"):
         """获取 tag_config 目录下的设备类型列表"""
-        tag_config_dir = os.path.join(self.base_dir, 'tag_config')
+        tag_config_dir = os.path.join(self.base_dir, config)
         if not os.path.exists(tag_config_dir):
             os.makedirs(tag_config_dir)
             logger.warning(f"tag_config 目录不存在，已自动创建：{tag_config_dir}")
         return [d for d in os.listdir(tag_config_dir)
                 if os.path.isdir(os.path.join(tag_config_dir, d))]
 
-    def get_templates_by_device(self, device_type):
+    def get_templates_by_device(self, device_type,config = "config_kingscada" ):
         """列出某个设备类型下的所有 json 模板"""
-        device_path = os.path.join(self.base_dir, 'tag_config', device_type)
+        device_path = os.path.join(self.base_dir, config, device_type)
         if not os.path.exists(device_path):
             logger.error(f"设备目录不存在：{device_path}")
             return []
         return [f for f in os.listdir(device_path) if f.endswith('.json')]
 
-    def load_template(self, device_type, filename):
+    def load_template(self, device_type, filename, config = "config_kingscada"):
         """加载选中的模板 JSON 文件"""
-        file_path = os.path.join(self.base_dir, 'tag_config', device_type, filename)
+        file_path = os.path.join(self.base_dir, config, device_type, filename, )
         try:
             with open(file_path, 'r', encoding='utf-8') as f:
                 self.template_data = json.load(f)
