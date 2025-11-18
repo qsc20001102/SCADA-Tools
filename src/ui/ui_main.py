@@ -3,7 +3,7 @@ import tkinter as tk
 from tkinter import ttk
 
 from src.ui.basic_ui import BasicUI
-from src.ui.tab_ping import PingTab
+from src.ui.tab_kingscada import TabKingSCDAD
 
 import logging
 logger = logging.getLogger(__name__)
@@ -31,7 +31,7 @@ class MainUI(BasicUI):
 
         # Tabs
         self.tabs = {
-            "KingSCADA点表生成": PingTab(self.tab_control),
+            "KingSCADA点表生成": TabKingSCDAD(self.tab_control, base_dir),
         }
 
         for name, tab in self.tabs.items():
