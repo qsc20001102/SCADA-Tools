@@ -1,0 +1,5 @@
+[
+  {"name": "_S_ZIO", "desc": "就地/远程模式", "type": "2", "addbyte": "4", "addbit": "2"},
+  {"name": "_S_ZIC", "desc": "手动/自动模式", "type": "2", "addbyte": "4", "addbit": "3"},
+  {"name": "_A_FLT", "desc": "运行状态", "type": "2", "addbyte": "8", "addbit": "1"}
+]

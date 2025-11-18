@@ -41,3 +41,33 @@
 2025-11-18 13:27:25,567 [INFO] 已加载模板文件：E:\Git\SCADA-Tools\config_kingscada\SIEMENS\udt_pid.json
 2025-11-18 13:27:30,581 [INFO] 已加载模板文件：E:\Git\SCADA-Tools\config_kingscada\SIEMENS\udt_SST.json
 2025-11-18 13:33:18,441 [INFO] 日志系统初始化完成，日志文件路径：E:\Git\SCADA-Tools\app.log
+2025-11-18 14:27:28,297 [INFO] 日志系统初始化完成，日志文件路径：E:\Git\SCADA-Tools\app.log
+2025-11-18 14:27:34,560 [INFO] 已加载模板文件：E:\Git\SCADA-Tools\config_kingscada\SIEMENS\udt_morot.json
+2025-11-18 14:27:37,963 [INFO] 成功加载 CSV：E:/Git/KingSCADA_Tag/input_data/SIEMENS.csv，共 13 行
+2025-11-18 14:28:09,887 [INFO] 日志系统初始化完成，日志文件路径：E:\Git\SCADA-Tools\app.log
+2025-11-18 14:28:16,190 [INFO] 已加载模板文件：E:\Git\SCADA-Tools\config_kingscada\SIEMENS\udt_morot.json
+2025-11-18 14:28:22,822 [INFO] 成功加载 CSV：E:/Git/KingSCADA_Tag/input_data/SIEMENS.csv，共 13 行
+2025-11-18 14:30:36,765 [INFO] 日志系统初始化完成，日志文件路径：E:\Git\SCADA-Tools\app.log
+2025-11-18 14:30:39,952 [INFO] 已加载模板文件：E:\Git\SCADA-Tools\config_kingscada\SIEMENS\udt_morot.json
+2025-11-18 14:30:42,775 [INFO] 成功加载 CSV：E:/Git/KingSCADA_Tag/input_data/SIEMENS.csv，共 13 行
+2025-11-18 14:30:43,822 [INFO] 成功生成点表文件：E:\Git\SCADA-Tools\output\SIEMENS_20251118143043.csv（共 377 行）
+2025-11-18 14:38:35,998 [INFO] 已加载模板文件：E:\Git\SCADA-Tools\config_kingscada\AB\pid.json
+2025-11-18 14:38:42,002 [INFO] 已加载模板文件：E:\Git\SCADA-Tools\config_kingscada\SIEMENS\SST.json
+2025-11-18 14:47:02,787 [INFO] 日志系统初始化完成，日志文件路径：E:\Git\SCADA-Tools\app.log
+2025-11-18 14:47:06,918 [INFO] 已加载模板文件：E:\Git\SCADA-Tools\config_kingscada\SIEMENS\valve.json
+2025-11-18 14:47:09,947 [INFO] 成功加载 CSV：E:/Git/KingSCADA_Tag/input_data/SIEMENS.csv，共 13 行
+2025-11-18 14:48:02,247 [INFO] 日志系统初始化完成，日志文件路径：E:\Git\SCADA-Tools\app.log
+2025-11-18 14:48:08,544 [INFO] 已加载模板文件：E:\Git\SCADA-Tools\config_kingscada\SIEMENS\valve.json
+2025-11-18 14:48:11,775 [INFO] 成功加载 CSV：E:/Git/KingSCADA_Tag/input_data/SIEMENS.csv，共 13 行
+2025-11-18 14:48:12,249 [INFO] 成功生成点表文件：E:\Git\SCADA-Tools\output_kingscada\SIEMENS_SIEMENS_20251118144812.csv（共 299 行）
+2025-11-18 14:49:18,808 [INFO] 日志系统初始化完成，日志文件路径：E:\Git\SCADA-Tools\app.log
+2025-11-18 14:49:22,170 [INFO] 已加载模板文件：E:\Git\SCADA-Tools\config_kingscada\SIEMENS\morot.json
+2025-11-18 14:49:24,821 [INFO] 成功加载 CSV：E:/Git/KingSCADA_Tag/input_data/SIEMENS.csv，共 13 行
+2025-11-18 14:49:25,335 [INFO] 成功生成点表文件：E:\Git\SCADA-Tools\output_kingscada\SIEMENS_morot.json_20251118144925.csv（共 377 行）
+2025-11-18 14:50:59,688 [INFO] 日志系统初始化完成，日志文件路径：E:\Git\SCADA-Tools\app.log
+2025-11-18 14:51:03,033 [INFO] 已加载模板文件：E:\Git\SCADA-Tools\config_kingscada\SIEMENS\morot.json
+2025-11-18 14:51:06,416 [INFO] 成功加载 CSV：E:/Git/KingSCADA_Tag/input_data/SIEMENS.csv，共 13 行
+2025-11-18 14:51:07,100 [INFO] 成功生成点表文件：E:\Git\SCADA-Tools\output_kingscada\SIEMENS_morot_20251118145107.csv（共 377 行）
+2025-11-18 15:04:01,823 [INFO] 日志系统初始化完成，日志文件路径：E:\Git\SCADA-Tools\app.log
+2025-11-18 15:06:39,274 [INFO] 日志系统初始化完成，日志文件路径：E:\Git\SCADA-Tools\app.log
+2025-11-18 15:06:41,743 [INFO] 已加载模板文件：E:\Git\SCADA-Tools\config_kingscada\SIEMENS\morot.json

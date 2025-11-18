@@ -30,17 +30,37 @@ class CSVManager:
             logger.info(f"成功加载 CSV：{filepath}，共 {len(self.csv_data)} 行")
         return self.csv_data
 
-    def generate_output(self, template_data, user_inputs):
+    def generate_output(self, folder, file_name):
         """
-        根据模板和 CSV 数据拼接生成新的 CSV 文件
-        user_inputs 包含：start_id, ip, device_name, group_name, protocol, db_num
+        根据headers和rows生成新的 CSV 文件
+        Args:
+            folder:文件夹名称
+            file_name:文件名称
         """
         timestamp = datetime.now().strftime("%Y%m%d%H%M%S") #获取当前时间
-        output_filename = f"{user_inputs['device']}_{timestamp}.csv"    #输出文件名
-        output_path = os.path.join(self.base_dir, 'output', output_filename)    #输出文件路径
+        output_filename = f"{file_name}_{timestamp}.csv"    #输出文件名
+        output_path = os.path.join(self.base_dir, folder, output_filename)    #输出文件路径
         os.makedirs(os.path.dirname(output_path), exist_ok=True)    #确保输出目录存在
+        #写入输出文件
+        with open(output_path, 'w', newline='', encoding='ANSI') as f:
+            writer = csv.writer(f)
+            writer.writerow(self.headers)
+            writer.writerows(self.rows)
+
+        logger.info(f"成功生成点表文件：{output_path}（共 {len(self.rows)} 行）")
+        output = f"成功生成点表文件：{output_path}（共 {len(self.rows)} 行）"
+        
+        return output
+    
+    def rows_kingscdada(self, template_data, user_inputs):
+        """
+        根据传入数据进行处理，并将数据写入headers和rows存储
+        Args:
+            template_data：读取的模板数据
+            user_inputs：用户设定的数据
+        """
         #表头
-        headers = ["TagID", "TagName", "Description", "TagType", "TagDataType",
+        self.headers = ["TagID", "TagName", "Description", "TagType", "TagDataType",
                    "MaxRawValue", "MinRawValue", "MaxValue", "MinValue", "NonLinearTableName",
                    "ConvertType", "IsFilter", "DeadBand", "Unit", "ChannelName",
                    "DeviceName", "ChannelDriver", "DeviceSeries", "DeviceSeriesType", "CollectControl",
@@ -60,7 +80,7 @@ class CSVManager:
         DataType_IOShort = ["32767","-32767","32767","-32767","","无","否","0"]
         DataType_IOFloat = ["1000000000","-1000000000","1000000000","-1000000000","","无","否","0"]
 
-        rows = []
+        self.rows = []
         count = 0
         for device_row in self.csv_data:
             code = device_row['设备代号']
@@ -139,15 +159,5 @@ class CSVManager:
                 row[18:18]=fixeddata1
                 row[31:31]=fixeddata2
                 row[35:35]=fixeddata3
-                rows.append(row)
+                self.rows.append(row)
                 count += 1
-        #写入输出文件
-        with open(output_path, 'w', newline='', encoding='ANSI') as f:
-            writer = csv.writer(f)
-            writer.writerow(headers)
-            writer.writerows(rows)
-
-        logger.info(f"成功生成点表文件：{output_path}（共 {len(rows)} 行）")
-        output = f"成功生成点表文件：{output_path}（共 {len(rows)} 行）"
-        
-        return output

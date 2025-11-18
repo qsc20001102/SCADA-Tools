@@ -1,0 +1,9 @@
+[
+  {"name": "_S_REM", "desc": "就地/远程模式", "type": "2", "addbyte": "4", "addbit": "1"},
+  {"name": "_S_AUT", "desc": "手动/自动模式", "type": "2", "addbyte": "4", "addbit": "2"},
+  {"name": "_S_RUN", "desc": "运行状态", "type": "2", "addbyte": "4", "addbit": "3"},
+  {"name": "_A_FLT", "desc": "故障信号", "type": "2", "addbyte": "8", "addbit": "1"},
+  {"name": "_V_TRT", "desc": "总运行时间(H)", "type": "1", "addbyte": "12", "addbit": "0"},
+  {"name": "_V_IIT", "desc": "电流反馈(A)", "type": "1", "addbyte": "28", "addbit": "0"},
+  {"name": "_V_SIT", "desc": "频率反馈(Hz)", "type": "1", "addbyte": "32", "addbit": "0"}
+]

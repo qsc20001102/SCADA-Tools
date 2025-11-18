@@ -42,8 +42,11 @@ class TabKingSCDAD(ttk.Frame, BasicUI):
 
         # 模板表格
         self.template_table = ttk.Treeview(frame, columns=("name","desc","type","access","address"),show="headings", height=8)
-        cols = {"name": ("名称", 100), "desc": ("描述", 130), "type": ("类型", 100),
-                "access": ("读写", 80), "address": ("地址", 78)}
+        cols = {"name": ("名称", 100), 
+                "desc": ("描述", 130), 
+                "type": ("类型", 100),
+                "access": ("读写", 80), 
+                "address": ("地址", 78)}
         for col, (text, width) in cols.items():
             self.template_table.heading(col, text=text)
             self.template_table.column(col, width=width, anchor="center")
@@ -99,7 +102,7 @@ class TabKingSCDAD(ttk.Frame, BasicUI):
     def create_generate_section(self, row, column, columnspan=1):
         frame = ttk.Frame(self)
         frame.grid(row=row, column=column, columnspan=columnspan, sticky='ew', padx=10, pady=5)
-        btn = ttk.Button(frame, text="生成点表文件", command=self.generate_csv)
+        btn = ttk.Button(frame, text="生成点表文件", command=self.on_generate_selected)
         btn.pack(anchor='center')
 
     # ---------------- 链路选择事件 ----------------
@@ -132,6 +135,9 @@ class TabKingSCDAD(ttk.Frame, BasicUI):
 
     # ---------------- 模板操作 ----------------
     def on_device_selected(self, event=None):
+        """
+        设备类型选择完成事件
+        """
         device = self.device_cb['var'].get()
         self.template_cb['combobox']['values'] = self.template_manager.get_templates_by_device(device)
         #更新参数区的内容
@@ -154,13 +160,19 @@ class TabKingSCDAD(ttk.Frame, BasicUI):
             self.channeldriver['var'].set(self.channeldriver_ab[0])
             self.db_num["frame"].grid_remove()  #隐藏DB块号输入框
 
-    def on_template_selected(self, event=None):
+    def on_template_selected(self,event=None):
+        """
+        点表模板选择完成事件
+        """
         device = self.device_cb['var'].get()
         template = self.template_cb['var'].get()
         self.template_data = self.template_manager.load_template(device, template)
         self.refresh_template_table()
 
     def refresh_template_table(self):
+        """
+        模板数据加载到表格中
+        """
         for row in self.template_table.get_children():
             self.template_table.delete(row)
         try:
@@ -171,7 +183,10 @@ class TabKingSCDAD(ttk.Frame, BasicUI):
             messagebox.showwarning("加载出错", f"加载模板异常{e}", icon="error")
 
     # ---------------- 生成 CSV ----------------
-    def generate_csv(self):
+    def on_generate_selected(self):
+        """
+        生成文件按钮事件
+        """
         if not getattr(self, 'template_data', None) or not getattr(self, 'csv_data', None):
             messagebox.showwarning("警告", "请先加载模板和CSV数据！")
             return
@@ -189,5 +204,10 @@ class TabKingSCDAD(ttk.Frame, BasicUI):
             "device": self.device_cb["var"].get(),
             "group_name_en": self.group_name_en["var"].get()
         }
-        output_path = self.csv_manager.generate_output(self.template_data, inputs)
+        #执行数据处理
+        self.csv_manager.rows_kingscdada(self.template_data, inputs)
+        #文件名称
+        file_name = f"{self.device_cb["var"].get()}_{self.template_cb["var"].get()[:-5]}"
+        #输出文件
+        output_path = self.csv_manager.generate_output("output_kingscada", file_name)
         messagebox.showinfo("生成成功", output_path)

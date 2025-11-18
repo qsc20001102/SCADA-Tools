@@ -1,0 +1,4 @@
+[
+  {"name": "_V_PV", "desc": "过程值", "type": "1", "addbyte": "36", "addbit": "0"},
+  {"name": "_V_PVQ", "desc": "累计值", "type": "1", "addbyte": "44", "addbit": "0"}
+]
