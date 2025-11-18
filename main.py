@@ -2,8 +2,8 @@ import sys
 import os
 import tkinter as tk
 
-from core.logger_config import setup_logger
-from core.ui.ui_main import MainUI
+from src.core.logger_config import setup_logger
+from src.ui.ui_main import MainUI
 
 if __name__ == "__main__":
     # 进行日志配置
