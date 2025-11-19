@@ -13,7 +13,7 @@ class TemplateManager:
         self.template_data = []
 
     def get_device_types(self, config = "config_kingscada"):
-        """获取 tag_config 目录下的设备类型列表"""
+        """获取 目录下的设备类型列表"""
         tag_config_dir = os.path.join(self.base_dir, config)
         if not os.path.exists(tag_config_dir):
             os.makedirs(tag_config_dir)
@@ -32,6 +32,7 @@ class TemplateManager:
     def load_template(self, device_type, filename, config = "config_kingscada"):
         """加载选中的模板 JSON 文件"""
         file_path = os.path.join(self.base_dir, config, device_type, filename, )
+        logger.info(f"打开模板目录：{file_path}")
         try:
             with open(file_path, 'r', encoding='utf-8') as f:
                 self.template_data = json.load(f)
