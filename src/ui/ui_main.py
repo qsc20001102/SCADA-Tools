@@ -5,6 +5,7 @@ from tkinter import ttk
 from src.ui.basic_ui import BasicUI
 from src.ui.tab_kingscada import TabKingSCDAD
 from src.ui.tab_bewgsed import TabBEWGSED
+from src.ui.tab_edgetts import TabEdgeTTS
 
 import logging
 logger = logging.getLogger(__name__)
@@ -34,6 +35,7 @@ class MainUI(BasicUI):
         self.tabs = {
             "KingSCADA点表生成": TabKingSCDAD(self.tab_control, base_dir),
             "北控SED上传点表生成": TabBEWGSED(self.tab_control, base_dir),
+            "批量文本转语音": TabEdgeTTS(self.tab_control, base_dir)
         }
 
         for name, tab in self.tabs.items():

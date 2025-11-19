@@ -76,7 +76,11 @@ class BasicUI:
         )
         combobox.grid(row=0, column=1, sticky='w')
         if inivar>=0:
-            var.set(listbox[inivar])
+            try:
+                var.set(listbox[inivar])
+            except Exception as e:
+                var.set("")
+                logger.warning(f"访问下拉框数据出错：{e}")
 
         return {
             "frame": frame,
