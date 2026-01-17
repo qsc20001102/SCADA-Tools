@@ -14,8 +14,12 @@ class TabEdgeTTS(ttk.Frame, BasicUI):
         super().__init__(parent)   
         self.csv_manager = CSVManager(base_dir)
         self.EdgeTTS = EdgeTTSManager(base_dir)
-        asyncio.run(self.EdgeTTS.fetch_voices())
-        self.list_voices = self.EdgeTTS.list_voices()
+        try:
+            asyncio.run(self.EdgeTTS.fetch_voices())
+            self.list_voices = self.EdgeTTS.list_voices()
+        except Exception as e:
+            logger.error(f"获取语音列表失败: {e}")
+            messagebox.showwarning("错误", "获取语音列表失败，请检查网络连接！", icon="error")
         self.main_ui()
 
     def main_ui(self):
