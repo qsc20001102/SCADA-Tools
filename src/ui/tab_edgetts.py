@@ -18,8 +18,9 @@ class TabEdgeTTS(ttk.Frame, BasicUI):
             asyncio.run(self.EdgeTTS.fetch_voices())
             self.list_voices = self.EdgeTTS.list_voices()
         except Exception as e:
+            self.list_voices = []
             logger.error(f"获取语音列表失败: {e}")
-            messagebox.showwarning("错误", "获取语音列表失败，请检查网络连接！", icon="error")
+            messagebox.showwarning("错误", "获取语音列表失败，请检查网络连接。语音生成功能不可用！", icon="error")
         self.main_ui()
 
     def main_ui(self):
@@ -89,8 +90,6 @@ class TabEdgeTTS(ttk.Frame, BasicUI):
 
         self.text_in = self.add_input(frame, "语音文本", row=3, col=0, inivar="进水泵房液位高高报警", entry_width=55, colspan=3)
 
-        #self.link = self.add_combobox(frame, "采集链路", row=1, col=0, listbox=["以太网", "COM"])
-        #self.link["combobox"].bind('<<ComboboxSelected>>', self.on_link_selected)
         self.one_btn = ttk.Button(frame, text="单条语音生成", command=self.on_one_generate_selected)
         self.one_btn.grid(row=4, column=0, columnspan=3, sticky='nsew', pady=5)
         self.batch_btn = ttk.Button(frame, text="批量语音生成", command=self.on_batch_generate_selected)

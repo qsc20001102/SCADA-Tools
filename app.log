@@ -1,0 +1,77 @@
+2026-02-12 20:43:15,702 [INFO] 日志系统初始化完成，日志文件路径：E:\Git\SCADA-Tools\app.log
+2026-02-12 20:43:22,756 [WARNING] 访问下拉框数据出错：list index out of range
+2026-02-12 20:43:37,205 [INFO] 成功加载 CSV：E:/Git/SCADA-Tools/input_data/TTS.csv，共 45 行
+2026-02-12 20:43:40,646 [INFO] 语音生成成功：E:\Git\SCADA-Tools\output_edgetts\进水泵房液位高高报警.wav
+2026-02-12 20:44:19,180 [INFO] 语音生成成功：E:\Git\SCADA-Tools\output_edgetts\进水泵房液位高高报警12.wav
+2026-02-12 20:44:19,411 [INFO] 语音生成成功：E:\Git\SCADA-Tools\output_edgetts\进水泵房液位高高报警20.wav
+2026-02-12 20:44:19,412 [INFO] 语音生成成功：E:\Git\SCADA-Tools\output_edgetts\进水泵房液位高高报警3.wav
+2026-02-12 20:44:19,848 [INFO] 语音生成成功：E:\Git\SCADA-Tools\output_edgetts\进水泵房液位高高报警6.wav
+2026-02-12 20:44:19,848 [INFO] 语音生成成功：E:\Git\SCADA-Tools\output_edgetts\进水泵房液位高高报警8.wav
+2026-02-12 20:44:19,848 [INFO] 语音生成成功：E:\Git\SCADA-Tools\output_edgetts\进水泵房液位高高报警5.wav
+2026-02-12 20:44:19,848 [INFO] 语音生成成功：E:\Git\SCADA-Tools\output_edgetts\进水泵房液位高高报警17.wav
+2026-02-12 20:44:19,849 [INFO] 语音生成成功：E:\Git\SCADA-Tools\output_edgetts\进水泵房液位高高报警15.wav
+2026-02-12 20:44:19,849 [INFO] 语音生成成功：E:\Git\SCADA-Tools\output_edgetts\进水泵房液位高高报警10.wav
+2026-02-12 20:44:19,849 [INFO] 语音生成成功：E:\Git\SCADA-Tools\output_edgetts\进水泵房液位高高报警11.wav
+2026-02-12 20:44:19,850 [INFO] 语音生成成功：E:\Git\SCADA-Tools\output_edgetts\进水泵房液位高高报警9.wav
+2026-02-12 20:44:19,850 [INFO] 语音生成成功：E:\Git\SCADA-Tools\output_edgetts\进水泵房液位高高报警4.wav
+2026-02-12 20:44:21,783 [INFO] 语音生成成功：E:\Git\SCADA-Tools\output_edgetts\进水泵房液位高高报警1.wav
+2026-02-12 20:44:21,784 [INFO] 语音生成成功：E:\Git\SCADA-Tools\output_edgetts\进水泵房液位高高报警14.wav
+2026-02-12 20:44:21,784 [INFO] 语音生成成功：E:\Git\SCADA-Tools\output_edgetts\进水泵房液位高高报警19.wav
+2026-02-12 20:44:21,784 [INFO] 语音生成成功：E:\Git\SCADA-Tools\output_edgetts\进水泵房液位高高报警2.wav
+2026-02-12 20:44:21,784 [INFO] 语音生成成功：E:\Git\SCADA-Tools\output_edgetts\进水泵房液位高高报警7.wav
+2026-02-12 20:44:21,785 [INFO] 语音生成成功：E:\Git\SCADA-Tools\output_edgetts\进水泵房液位高高报警16.wav
+2026-02-12 20:44:21,785 [INFO] 语音生成成功：E:\Git\SCADA-Tools\output_edgetts\进水泵房液位高高报警18.wav
+2026-02-12 20:44:21,785 [INFO] 语音生成成功：E:\Git\SCADA-Tools\output_edgetts\进水泵房液位高高报警13.wav
+2026-02-12 20:44:24,215 [INFO] 语音生成成功：E:\Git\SCADA-Tools\output_edgetts\进水泵房液位高高报警21.wav
+2026-02-12 20:44:24,441 [INFO] 语音生成成功：E:\Git\SCADA-Tools\output_edgetts\进水泵房液位高高报警22.wav
+2026-02-12 20:44:24,663 [INFO] 语音生成成功：E:\Git\SCADA-Tools\output_edgetts\进水泵房液位高高报警37.wav
+2026-02-12 20:44:24,664 [INFO] 语音生成成功：E:\Git\SCADA-Tools\output_edgetts\进水泵房液位高高报警28.wav
+2026-02-12 20:44:24,664 [INFO] 语音生成成功：E:\Git\SCADA-Tools\output_edgetts\进水泵房液位高高报警36.wav
+2026-02-12 20:44:24,664 [INFO] 语音生成成功：E:\Git\SCADA-Tools\output_edgetts\进水泵房液位高高报警31.wav
+2026-02-12 20:44:24,665 [INFO] 语音生成成功：E:\Git\SCADA-Tools\output_edgetts\进水泵房液位高高报警27.wav
+2026-02-12 20:44:24,665 [INFO] 语音生成成功：E:\Git\SCADA-Tools\output_edgetts\进水泵房液位高高报警40.wav
+2026-02-12 20:44:24,665 [INFO] 语音生成成功：E:\Git\SCADA-Tools\output_edgetts\进水泵房液位高高报警32.wav
+2026-02-12 20:44:24,665 [INFO] 语音生成成功：E:\Git\SCADA-Tools\output_edgetts\进水泵房液位高高报警24.wav
+2026-02-12 20:44:24,665 [INFO] 语音生成成功：E:\Git\SCADA-Tools\output_edgetts\进水泵房液位高高报警39.wav
+2026-02-12 20:44:24,666 [INFO] 语音生成成功：E:\Git\SCADA-Tools\output_edgetts\进水泵房液位高高报警30.wav
+2026-02-12 20:44:24,666 [INFO] 语音生成成功：E:\Git\SCADA-Tools\output_edgetts\进水泵房液位高高报警38.wav
+2026-02-12 20:44:25,312 [INFO] 语音生成成功：E:\Git\SCADA-Tools\output_edgetts\进水泵房液位高高报警29.wav
+2026-02-12 20:44:25,313 [INFO] 语音生成成功：E:\Git\SCADA-Tools\output_edgetts\进水泵房液位高高报警35.wav
+2026-02-12 20:44:25,313 [INFO] 语音生成成功：E:\Git\SCADA-Tools\output_edgetts\进水泵房液位高高报警34.wav
+2026-02-12 20:44:25,313 [INFO] 语音生成成功：E:\Git\SCADA-Tools\output_edgetts\进水泵房液位高高报警25.wav
+2026-02-12 20:44:25,314 [INFO] 语音生成成功：E:\Git\SCADA-Tools\output_edgetts\进水泵房液位高高报警23.wav
+2026-02-12 20:44:25,314 [INFO] 语音生成成功：E:\Git\SCADA-Tools\output_edgetts\进水泵房液位高高报警26.wav
+2026-02-12 20:44:25,474 [INFO] 语音生成成功：E:\Git\SCADA-Tools\output_edgetts\进水泵房液位高高报警33.wav
+2026-02-12 20:44:25,976 [INFO] 语音生成成功：E:\Git\SCADA-Tools\output_edgetts\进水泵房液位高高报警42.wav
+2026-02-12 20:44:26,094 [INFO] 语音生成成功：E:\Git\SCADA-Tools\output_edgetts\进水泵房液位高高报警43.wav
+2026-02-12 20:44:26,218 [INFO] 语音生成成功：E:\Git\SCADA-Tools\output_edgetts\进水泵房液位高高报警45.wav
+2026-02-12 20:44:26,255 [INFO] 语音生成成功：E:\Git\SCADA-Tools\output_edgetts\进水泵房液位高高报警44.wav
+2026-02-12 20:44:26,256 [INFO] 语音生成成功：E:\Git\SCADA-Tools\output_edgetts\进水泵房液位高高报警41.wav
+2026-02-12 20:45:25,242 [INFO] 日志系统初始化完成，日志文件路径：E:\Git\SCADA-Tools\app.log
+2026-02-12 20:45:26,466 [WARNING] 访问下拉框数据出错：list index out of range
+2026-02-12 20:45:36,694 [INFO] 语音生成成功：E:\Git\SCADA-Tools\output_edgetts\进水泵房液位高高报警.wav
+2026-02-12 20:45:51,585 [INFO] 日志系统初始化完成，日志文件路径：E:\Git\SCADA-Tools\app.log
+2026-02-12 20:45:51,921 [ERROR] 获取语音列表失败: Cannot connect to host api.msedgeservices.com:443 ssl:<ssl.SSLContext object at 0x000001E158FA3930> [getaddrinfo failed]
+2026-02-12 20:48:37,643 [INFO] 日志系统初始化完成，日志文件路径：E:\Git\SCADA-Tools\app.log
+2026-02-12 20:48:37,990 [ERROR] 获取语音列表失败: Cannot connect to host api.msedgeservices.com:443 ssl:<ssl.SSLContext object at 0x00000178CAEE3930> [getaddrinfo failed]
+2026-02-12 20:53:14,810 [INFO] 日志系统初始化完成，日志文件路径：E:\Git\SCADA-Tools\app.log
+2026-02-12 20:53:19,737 [WARNING] 访问下拉框数据出错：list index out of range
+2026-02-12 20:53:29,575 [INFO] 日志系统初始化完成，日志文件路径：E:\Git\SCADA-Tools\app.log
+2026-02-12 20:53:31,920 [ERROR] 获取语音列表失败: Cannot connect to host api.msedgeservices.com:443 ssl:<ssl.SSLContext object at 0x000002A039013930> [None]
+2026-02-12 20:53:34,257 [WARNING] 访问下拉框数据出错：list index out of range
+2026-02-12 20:53:34,258 [WARNING] 访问下拉框数据出错：list index out of range
+2026-02-12 20:53:34,259 [WARNING] 访问下拉框数据出错：list index out of range
+2026-02-12 20:54:51,712 [INFO] 日志系统初始化完成，日志文件路径：E:\Git\SCADA-Tools\app.log
+2026-02-12 20:54:54,066 [ERROR] 获取语音列表失败: Cannot connect to host api.msedgeservices.com:443 ssl:<ssl.SSLContext object at 0x0000020B18B33930> [None]
+2026-02-12 20:55:02,425 [WARNING] 访问下拉框数据出错：list index out of range
+2026-02-12 20:55:02,426 [WARNING] 访问下拉框数据出错：list index out of range
+2026-02-12 20:55:02,427 [WARNING] 访问下拉框数据出错：list index out of range
+2026-02-12 20:55:09,161 [ERROR] 单条语音生成失败：Invalid voice ''.
+2026-02-12 20:58:26,672 [INFO] 日志系统初始化完成，日志文件路径：E:\Git\SCADA-Tools\app.log
+2026-02-12 20:58:32,388 [WARNING] 访问下拉框数据出错：list index out of range
+2026-02-12 20:59:05,621 [INFO] 日志系统初始化完成，日志文件路径：E:\Git\SCADA-Tools\app.log
+2026-02-12 20:59:09,352 [WARNING] 访问下拉框数据出错：list index out of range
+2026-02-12 20:59:56,322 [INFO] 语音生成成功：E:\Git\SCADA-Tools\output_edgetts\进水泵房液位高高报警.wav
+2026-02-12 21:00:14,547 [INFO] 成功加载 CSV：E:/Git/SCADA-Tools/input_data/SIEMENS.csv，共 13 行
+2026-02-12 21:01:45,840 [INFO] 打开模板目录：E:\Git\SCADA-Tools\config_kingscada\SIEMENS\手动桥车采集模板.json
+2026-02-12 21:01:45,856 [INFO] 已加载模板文件：E:\Git\SCADA-Tools\config_kingscada\SIEMENS\手动桥车采集模板.json
