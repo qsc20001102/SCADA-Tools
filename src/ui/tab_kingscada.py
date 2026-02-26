@@ -31,7 +31,7 @@ class TabKingSCDAD(ttk.Frame, BasicUI):
 
     # ---------------- 模板区 ----------------
     def create_template_section(self, row, column):
-        frame = ttk.LabelFrame(self, text="配置文件选择", padding=5)
+        frame = ttk.LabelFrame(self, text="配置文件", padding=5)
         frame.grid(row=row, column=column, sticky='nsew', padx=5, pady=5)
 
         listbox = self.template_manager.get_device_types(config="config_kingscada")
@@ -107,11 +107,14 @@ class TabKingSCDAD(ttk.Frame, BasicUI):
 
     # ---------------- CSV区 ----------------
     def create_csv_section(self, row, column):
-        frame = ttk.LabelFrame(self, text="CSV 数据导入", padding=5)
-        frame.grid(row=row, column=column, sticky='nsew', padx=5, pady=5)
+        frame = ttk.LabelFrame(self, text="批量生成", padding=2)
+        frame.grid(row=row, column=column, sticky='nsew', padx=5, pady=2)
 
         btn = ttk.Button(frame, text="选择CSV文件", command=self.load_csv_file)
         btn.grid(row=0, column=0, sticky='w')
+
+        btn = ttk.Button(frame, text="批量点表生成", command=self.on_generate_selected)
+        btn.grid(row=0, column=0, sticky='e')
 
         self.csv_table = ttk.Treeview(frame, columns=("code","desc","offset"), show="headings", height=8)
         cols = {"code": ("设备代号", 150), "desc": ("设备名称", 180), "offset": ("拼接地址", 120)}
@@ -146,10 +149,40 @@ class TabKingSCDAD(ttk.Frame, BasicUI):
             logger.error(f"导入数据异常{e}")
             messagebox.showwarning("导入出错", f"导入数据异常{e}", icon="error")
 
+    def on_generate_selected(self):
+        """
+        生成文件按钮事件
+        """
+        if not getattr(self, 'template_data', None) or not getattr(self, 'csv_data', None):
+            messagebox.showwarning("警告", "请先加载模板和CSV数据！")
+            return
+        inputs = {
+            "start_id": self.start_id["var"].get(),
+            "ip": self.link_ip["var"].get(),
+            "device_name": self.dev_name["var"].get(),
+            "group_name": self.group_name["var"].get(),
+            "link":self.link["var"].get(),
+            "link_ip":self.link_ip["var"].get(),
+            "link_com":self.link_com["var"].get(),
+            "deviceseries": self.deviceseries["var"].get(),
+            "channeldriver": self.channeldriver["var"].get(),
+            "db_num": self.db_num["var"].get(),
+            "device": self.device_cb["var"].get(),
+            "group_name_en": self.group_name_en["var"].get()
+        }
+        #执行数据处理
+        self.csv_manager.rows_kingscdada(self.template_data, inputs, self.csv_data)
+        #文件名称
+        file_name = f"{self.device_cb["var"].get()}_{self.template_cb["var"].get()[:-5]}"
+        #输出文件
+        output_path = self.csv_manager.generate_output("output_kingscada", file_name)
+        if output_path:
+            messagebox.showinfo("生成成功", output_path)
+
     # ---------------- 参数区 ----------------
     def create_input_section(self, row, column, columnspan=1):
-        frame = ttk.LabelFrame(self, text="参数输入", padding=10)
-        frame.grid(row=row, column=column, columnspan=columnspan, sticky='ew', padx=10, pady=5)
+        frame = ttk.LabelFrame(self, text="参数输入", padding=2)
+        frame.grid(row=row, column=column, columnspan=columnspan, sticky='ew', padx=10, pady=2)
 
         self.start_id = self.add_input(frame, "起始ID", row=0, col=0, inivar=1001) 
         self.dev_name = self.add_input(frame, "设备名称", row=0, col=1, inivar="PLC1")
@@ -184,17 +217,24 @@ class TabKingSCDAD(ttk.Frame, BasicUI):
 
     # ---------------- 生成区 ----------------
     def create_generate_section(self, row, column, columnspan=1):
-        frame = ttk.Frame(self)
-        frame.grid(row=row, column=column, columnspan=columnspan, sticky='ew', padx=10, pady=5)
-        btn = ttk.Button(frame, text="生成点表文件", command=self.on_generate_selected)
-        btn.pack(anchor='center')
+        frame = ttk.LabelFrame(self, text="单组生成", padding=2)
+        frame.grid(row=row, column=column, columnspan=columnspan, sticky='ew', padx=10, pady=2)
 
-    def on_generate_selected(self):
+        self.one_name = self.add_input(frame, "设备代号", row=0, col=0) 
+        self.one_desc = self.add_input(frame, "设备名称", row=0, col=1) 
+        self.one_add = self.add_input(frame, "设备地址", row=0, col=2) 
+
+        frame.columnconfigure(3, weight=1)
+
+        one_btn = ttk.Button(frame, text="单组点表生成", command=self.one_generate_selected)
+        one_btn.grid(row=0, column=4, sticky='e')
+
+    def one_generate_selected(self):
         """
         生成文件按钮事件
         """
-        if not getattr(self, 'template_data', None) or not getattr(self, 'csv_data', None):
-            messagebox.showwarning("警告", "请先加载模板和CSV数据！")
+        if not getattr(self, 'template_data', None) or not self.one_name["var"].get() or not self.one_desc["var"].get() or not self.one_add["var"].get():
+            messagebox.showwarning("警告", "请先加载模板和输入参考数据！")
             return
         inputs = {
             "start_id": self.start_id["var"].get(),
@@ -210,8 +250,16 @@ class TabKingSCDAD(ttk.Frame, BasicUI):
             "device": self.device_cb["var"].get(),
             "group_name_en": self.group_name_en["var"].get()
         }
+
+        one_data = [
+            {
+                "设备代号":self.one_name["var"].get(),
+                "设备描述":self.one_desc["var"].get(),
+                "拼接地址":self.one_add["var"].get()
+            }
+        ]
         #执行数据处理
-        self.csv_manager.rows_kingscdada(self.template_data, inputs)
+        self.csv_manager.rows_kingscdada(self.template_data, inputs, one_data)
         #文件名称
         file_name = f"{self.device_cb["var"].get()}_{self.template_cb["var"].get()[:-5]}"
         #输出文件

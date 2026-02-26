@@ -60,7 +60,7 @@ class CSVManager:
         
         return output
     
-    def rows_kingscdada(self, template_data, user_inputs):
+    def rows_kingscdada(self, template_data, user_inputs, csv_data):
         """
         根据传入数据进行处理，并将数据写入headers和rows存储
         Args:
@@ -90,7 +90,7 @@ class CSVManager:
 
         self.rows = []
         count = 0
-        for device_row in self.csv_data:
+        for device_row in csv_data:
             code = device_row['设备代号']
             desc = device_row['设备描述']
             #拼接地址处理

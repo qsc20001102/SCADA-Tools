@@ -1,0 +1,18 @@
+[
+  {"name": "_C_ST", "desc": "程序启动按钮", "type": "IODisc", "access": "读写", "address": 0.0},
+  {"name": "_C_SP", "desc": "程序停止按钮", "type": "IODisc", "access": "读写", "address": 0.1},
+  {"name": "_S_RDY", "desc": "自动就绪状态", "type": "IODisc", "access": "只读", "address": 0.2},
+  {"name": "_S_RUN", "desc": "自动运行状态", "type": "IODisc", "access": "只读", "address": 0.3},
+  {"name": "_S_LDH", "desc": "液位差高显示", "type": "IODisc", "access": "只读", "address": 0.4},
+  {"name": "_S_SR1_AUT", "desc": "格栅1自动状态", "type": "IODisc", "access": "只读", "address": 0.5},
+  {"name": "_S_SR2_AUT", "desc": "格栅2自动状态", "type": "IODisc", "access": "只读", "address": 0.6},
+  {"name": "_S_CV_AUT", "desc": "输送机自动状态", "type": "IODisc", "access": "只读", "address": 0.7},
+  {"name": "_A_ALM", "desc": "清污失败报警", "type": "IODisc", "access": "只读", "address": 1.0},
+  {"name": "_V_T_ST", "desc": "运行时间显示（s）", "type": "IOShort", "access": "只读", "address": 2.0},
+  {"name": "_V_T_SP", "desc": "停止时间显示（s）", "type": "IOShort", "access": "只读", "address": 4.0},
+  {"name": "_W_MOD", "desc": "运行模式设定", "type": "IOShort", "access": "读写", "address": 6.0},
+  {"name": "_W_T_ST", "desc": "运行时间设定（s）", "type": "IOShort", "access": "读写", "address": 8.0},
+  {"name": "_W_T_SP", "desc": "停止时间设定（s）", "type": "IOShort", "access": "读写", "address": 10.0},
+  {"name": "_W_LDT_H", "desc": "液位差高设定（m）", "type": "IOFloat", "access": "读写", "address": 12.0},
+  {"name": "_W_LDT_L", "desc": "液位差低设定（m）", "type": "IOFloat", "access": "读写", "address": 16.0}
+]

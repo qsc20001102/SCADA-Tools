@@ -75,3 +75,84 @@
 2026-02-12 21:00:14,547 [INFO] 成功加载 CSV：E:/Git/SCADA-Tools/input_data/SIEMENS.csv，共 13 行
 2026-02-12 21:01:45,840 [INFO] 打开模板目录：E:\Git\SCADA-Tools\config_kingscada\SIEMENS\手动桥车采集模板.json
 2026-02-12 21:01:45,856 [INFO] 已加载模板文件：E:\Git\SCADA-Tools\config_kingscada\SIEMENS\手动桥车采集模板.json
+2026-02-26 14:56:28,917 [INFO] 日志系统初始化完成，日志文件路径：E:\Git\SCADA-Tools\app.log
+2026-02-26 15:00:01,685 [INFO] 日志系统初始化完成，日志文件路径：E:\Git\SCADA-Tools\app.log
+2026-02-26 15:00:03,738 [WARNING] 访问下拉框数据出错：list index out of range
+2026-02-26 15:05:53,195 [INFO] 日志系统初始化完成，日志文件路径：E:\Git\SCADA-Tools\app.log
+2026-02-26 15:05:55,652 [WARNING] 访问下拉框数据出错：list index out of range
+2026-02-26 15:11:41,793 [INFO] 日志系统初始化完成，日志文件路径：E:\Git\SCADA-Tools\app.log
+2026-02-26 15:11:43,885 [WARNING] 访问下拉框数据出错：list index out of range
+2026-02-26 15:15:08,460 [INFO] 日志系统初始化完成，日志文件路径：E:\Git\SCADA-Tools\app.log
+2026-02-26 15:15:09,995 [WARNING] 访问下拉框数据出错：list index out of range
+2026-02-26 15:25:42,005 [INFO] 日志系统初始化完成，日志文件路径：E:\Git\SCADA-Tools\app.log
+2026-02-26 15:25:43,352 [WARNING] 访问下拉框数据出错：list index out of range
+2026-02-26 15:26:17,762 [INFO] 日志系统初始化完成，日志文件路径：E:\Git\SCADA-Tools\app.log
+2026-02-26 15:26:19,252 [WARNING] 访问下拉框数据出错：list index out of range
+2026-02-26 15:26:42,130 [INFO] 日志系统初始化完成，日志文件路径：E:\Git\SCADA-Tools\app.log
+2026-02-26 15:26:43,575 [WARNING] 访问下拉框数据出错：list index out of range
+2026-02-26 15:27:34,037 [INFO] 日志系统初始化完成，日志文件路径：E:\Git\SCADA-Tools\app.log
+2026-02-26 15:27:36,171 [WARNING] 访问下拉框数据出错：list index out of range
+2026-02-26 15:29:17,810 [INFO] 日志系统初始化完成，日志文件路径：E:\Git\SCADA-Tools\app.log
+2026-02-26 15:29:20,126 [WARNING] 访问下拉框数据出错：list index out of range
+2026-02-26 15:30:30,141 [INFO] 日志系统初始化完成，日志文件路径：E:\Git\SCADA-Tools\app.log
+2026-02-26 15:30:31,737 [WARNING] 访问下拉框数据出错：list index out of range
+2026-02-26 15:30:51,019 [INFO] 日志系统初始化完成，日志文件路径：E:\Git\SCADA-Tools\app.log
+2026-02-26 15:30:53,037 [WARNING] 访问下拉框数据出错：list index out of range
+2026-02-26 15:32:56,683 [INFO] 日志系统初始化完成，日志文件路径：E:\Git\SCADA-Tools\app.log
+2026-02-26 15:32:58,241 [WARNING] 访问下拉框数据出错：list index out of range
+2026-02-26 15:33:39,708 [INFO] 日志系统初始化完成，日志文件路径：E:\Git\SCADA-Tools\app.log
+2026-02-26 15:33:42,088 [WARNING] 访问下拉框数据出错：list index out of range
+2026-02-26 15:34:13,210 [INFO] 打开模板目录：E:\Git\SCADA-Tools\config_kingscada\SIEMENS\手动电机采集模板.json
+2026-02-26 15:34:13,211 [INFO] 已加载模板文件：E:\Git\SCADA-Tools\config_kingscada\SIEMENS\手动电机采集模板.json
+2026-02-26 15:34:16,907 [INFO] 成功加载 CSV：E:/Git/SCADA-Tools/input_data/SIEMENS.csv，共 13 行
+2026-02-26 15:34:19,166 [INFO] 成功生成点表文件：E:\Git\SCADA-Tools\output_kingscada\SIEMENS_手动电机采集模板_20260226153419.csv（共 377 行）
+2026-02-26 15:34:22,215 [INFO] 成功生成点表文件：E:\Git\SCADA-Tools\output_kingscada\SIEMENS_手动电机采集模板_20260226153422.csv（共 377 行）
+2026-02-26 15:35:27,951 [INFO] 日志系统初始化完成，日志文件路径：E:\Git\SCADA-Tools\app.log
+2026-02-26 15:35:30,129 [WARNING] 访问下拉框数据出错：list index out of range
+2026-02-26 15:40:46,269 [INFO] 日志系统初始化完成，日志文件路径：E:\Git\SCADA-Tools\app.log
+2026-02-26 15:40:47,727 [WARNING] 访问下拉框数据出错：list index out of range
+2026-02-26 15:41:36,573 [INFO] 日志系统初始化完成，日志文件路径：E:\Git\SCADA-Tools\app.log
+2026-02-26 15:41:37,850 [WARNING] 访问下拉框数据出错：list index out of range
+2026-02-26 15:48:36,040 [INFO] 日志系统初始化完成，日志文件路径：E:\Git\SCADA-Tools\app.log
+2026-02-26 15:48:37,628 [WARNING] 访问下拉框数据出错：list index out of range
+2026-02-26 15:48:42,332 [INFO] 打开模板目录：E:\Git\SCADA-Tools\config_kingscada\SIEMENS\格栅自动模版.json
+2026-02-26 15:48:42,335 [ERROR] 加载模板文件失败：E:\Git\SCADA-Tools\config_kingscada\SIEMENS\格栅自动模版.json
+Traceback (most recent call last):
+  File "E:\Git\SCADA-Tools\src\core\template_manager.py", line 38, in load_template
+    self.template_data = json.load(f)
+                         ~~~~~~~~~^^^
+  File "d:\Python313\Lib\json\__init__.py", line 293, in load
+    return loads(fp.read(),
+        cls=cls, object_hook=object_hook,
+        parse_float=parse_float, parse_int=parse_int,
+        parse_constant=parse_constant, object_pairs_hook=object_pairs_hook, **kw)
+  File "d:\Python313\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "d:\Python313\Lib\json\decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Python313\Lib\json\decoder.py", line 361, in raw_decode
+    obj, end = self.scan_once(s, idx)
+               ~~~~~~~~~~~~~~^^^^^^^^
+json.decoder.JSONDecodeError: Illegal trailing comma before end of array: line 17 column 96 (char 1488)
+2026-02-26 15:49:01,186 [INFO] 打开模板目录：E:\Git\SCADA-Tools\config_kingscada\SIEMENS\普通仪表采集模板.json
+2026-02-26 15:49:01,186 [INFO] 已加载模板文件：E:\Git\SCADA-Tools\config_kingscada\SIEMENS\普通仪表采集模板.json
+2026-02-26 15:49:56,780 [INFO] 日志系统初始化完成，日志文件路径：E:\Git\SCADA-Tools\app.log
+2026-02-26 15:49:58,451 [WARNING] 访问下拉框数据出错：list index out of range
+2026-02-26 15:50:02,376 [INFO] 打开模板目录：E:\Git\SCADA-Tools\config_kingscada\SIEMENS\格栅自动模版.json
+2026-02-26 15:50:02,377 [INFO] 已加载模板文件：E:\Git\SCADA-Tools\config_kingscada\SIEMENS\格栅自动模版.json
+2026-02-26 15:55:36,921 [INFO] 日志系统初始化完成，日志文件路径：E:\Git\SCADA-Tools\app.log
+2026-02-26 15:55:38,746 [WARNING] 访问下拉框数据出错：list index out of range
+2026-02-26 15:55:56,536 [INFO] 打开模板目录：E:\Git\SCADA-Tools\config_kingscada\SIEMENS\普通仪表采集模板.json
+2026-02-26 15:55:56,536 [INFO] 已加载模板文件：E:\Git\SCADA-Tools\config_kingscada\SIEMENS\普通仪表采集模板.json
+2026-02-26 15:56:05,276 [WARNING] 数据为空，不生成文件
+2026-02-26 15:56:07,009 [WARNING] 数据为空，不生成文件
+2026-02-26 16:12:03,712 [INFO] 日志系统初始化完成，日志文件路径：E:\Git\SCADA-Tools\app.log
+2026-02-26 16:12:05,066 [WARNING] 访问下拉框数据出错：list index out of range
+2026-02-26 16:12:10,625 [INFO] 打开模板目录：E:\Git\SCADA-Tools\config_kingscada\SIEMENS\手动电机采集模板.json
+2026-02-26 16:12:10,625 [INFO] 已加载模板文件：E:\Git\SCADA-Tools\config_kingscada\SIEMENS\手动电机采集模板.json
+2026-02-26 16:12:13,735 [INFO] 成功加载 CSV：E:/Git/SCADA-Tools/input_data/SIEMENS.csv，共 13 行
+2026-02-26 16:12:14,721 [INFO] 成功生成点表文件：E:\Git\SCADA-Tools\output_kingscada\SIEMENS_手动电机采集模板_20260226161214.csv（共 377 行）
+2026-02-26 16:12:40,242 [INFO] 成功生成点表文件：E:\Git\SCADA-Tools\output_kingscada\SIEMENS_手动电机采集模板_20260226161240.csv（共 29 行）
+2026-02-26 16:13:12,099 [INFO] 成功生成点表文件：E:\Git\SCADA-Tools\output_kingscada\SIEMENS_手动电机采集模板_20260226161312.csv（共 377 行）
