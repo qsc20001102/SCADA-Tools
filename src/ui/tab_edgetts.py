@@ -81,7 +81,7 @@ class TabEdgeTTS(ttk.Frame, BasicUI):
         self.list_styles = self.EdgeTTS.get_voice_styles(voice)
         self.list_roles = self.EdgeTTS.get_voice_roles(voice)
         self.style_com = self.add_combobox(frame, "风格", row=1, col=0, listbox=self.list_styles, width=20)
-        self.role_com = self.add_combobox(frame, "角色", row=1, col=1, listbox=self.list_roles, width=20)
+        # self.role_com = self.add_combobox(frame, "角色", row=1, col=1, listbox=self.list_roles, width=20)
         self.on_voices_selected()
 
         self.rate_in = self.add_input(frame, "语速", row=2, col=0, inivar="20", entry_width=8)
@@ -103,7 +103,7 @@ class TabEdgeTTS(ttk.Frame, BasicUI):
         self.list_styles = self.EdgeTTS.get_voice_styles(voice)
         self.list_roles = self.EdgeTTS.get_voice_roles(voice)
         self.style_com['combobox']['values'] = self.list_styles
-        self.role_com['combobox']['values'] = self.list_roles
+        # self.role_com['combobox']['values'] = self.list_roles
 
         if self.list_styles:
             self.style_com['var'].set(self.list_styles[0]) 
@@ -113,7 +113,7 @@ class TabEdgeTTS(ttk.Frame, BasicUI):
         if self.list_roles:
             self.role_com['var'].set(self.list_roles[0]) 
         else:
-            self.role_com['var'].set("") 
+            # self.role_com['var'].set("") 
 
     def _format_percentage(value):
         """

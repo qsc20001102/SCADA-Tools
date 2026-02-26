@@ -156,3 +156,16 @@ json.decoder.JSONDecodeError: Illegal trailing comma before end of array: line 1
 2026-02-26 16:12:14,721 [INFO] 成功生成点表文件：E:\Git\SCADA-Tools\output_kingscada\SIEMENS_手动电机采集模板_20260226161214.csv（共 377 行）
 2026-02-26 16:12:40,242 [INFO] 成功生成点表文件：E:\Git\SCADA-Tools\output_kingscada\SIEMENS_手动电机采集模板_20260226161240.csv（共 29 行）
 2026-02-26 16:13:12,099 [INFO] 成功生成点表文件：E:\Git\SCADA-Tools\output_kingscada\SIEMENS_手动电机采集模板_20260226161312.csv（共 377 行）
+2026-02-26 16:16:31,295 [INFO] 日志系统初始化完成，日志文件路径：E:\Git\SCADA-Tools\app.log
+2026-02-26 16:16:32,780 [WARNING] 访问下拉框数据出错：list index out of range
+2026-02-26 16:16:52,465 [INFO] 日志系统初始化完成，日志文件路径：E:\Git\SCADA-Tools\app.log
+2026-02-26 16:16:53,923 [WARNING] 访问下拉框数据出错：list index out of range
+2026-02-26 16:18:36,856 [INFO] 日志系统初始化完成，日志文件路径：E:\Git\SCADA-Tools\app.log
+2026-02-26 16:18:38,940 [WARNING] 访问下拉框数据出错：list index out of range
+2026-02-26 16:18:55,581 [INFO] 日志系统初始化完成，日志文件路径：E:\Git\SCADA-Tools\app.log
+2026-02-26 16:18:57,131 [WARNING] 访问下拉框数据出错：list index out of range
+2026-02-26 16:19:11,665 [INFO] 日志系统初始化完成，日志文件路径：E:\Git\SCADA-Tools\app.log
+2026-02-26 16:19:44,892 [INFO] 日志系统初始化完成，日志文件路径：E:\Git\SCADA-Tools\app.log
+2026-02-26 16:19:46,298 [WARNING] 访问下拉框数据出错：list index out of range
+2026-02-26 16:20:39,385 [INFO] 日志系统初始化完成，日志文件路径：E:\Git\SCADA-Tools\app.log
+2026-02-26 16:20:57,463 [INFO] 日志系统初始化完成，日志文件路径：E:\Git\SCADA-Tools\app.log
