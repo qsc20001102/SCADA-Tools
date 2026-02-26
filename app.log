@@ -169,3 +169,5 @@ json.decoder.JSONDecodeError: Illegal trailing comma before end of array: line 1
 2026-02-26 16:19:46,298 [WARNING] 访问下拉框数据出错：list index out of range
 2026-02-26 16:20:39,385 [INFO] 日志系统初始化完成，日志文件路径：E:\Git\SCADA-Tools\app.log
 2026-02-26 16:20:57,463 [INFO] 日志系统初始化完成，日志文件路径：E:\Git\SCADA-Tools\app.log
+2026-02-26 16:22:30,454 [INFO] 日志系统初始化完成，日志文件路径：E:\Git\SCADA-Tools\app.log
+2026-02-26 16:22:33,349 [WARNING] 访问下拉框数据出错：list index out of range
